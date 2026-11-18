@@ -1,35 +1,146 @@
 <!doctype html>
 <html lang="zh-Hant">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="一起編寫的社團新手指南：介紹、資源、問答與參與方式。">
   <title>社團新手指南</title>
   <style>
-    :root { color-scheme: dark; --bg: #101714; --panel: #19241e; --text: #f0f5ef; --muted: #afbeb4; --accent: #72f5ae; --border: #35493d; }
-    * { box-sizing: border-box; }
-    body { margin: 0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, "Noto Sans TC", sans-serif; line-height: 1.8; }
-    .wrap { width: min(100% - 40px, 1040px); margin: auto; }
-    header { padding: 80px 0 48px; border-bottom: 1px solid var(--border); }
-    .eyebrow { color: var(--accent); font-size: 14px; font-weight: 700; letter-spacing: .16em; }
-    h1 { font-size: clamp(40px, 7vw, 72px); line-height: 1.2; margin: 20px 0; letter-spacing: -.035em; }
-    h2 { font-size: 28px; margin: 0 0 16px; }
-    p { margin: 0 0 16px; }
-    #tagline { font-size: 22px; color: var(--muted); }
-    nav { display: flex; flex-wrap: wrap; gap: 12px 28px; margin-top: 30px; }
-    a { color: var(--accent); text-underline-offset: 5px; }
-    a:hover { color: var(--text); }
-    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 6px; }
-    main { padding-top: 36px; display: flex; flex-direction: column; gap: 24px; }
-    section { padding: 30px; background: var(--panel); border: 1px solid var(--border); border-radius: 16px; scroll-margin-top: 24px; }
-    ul, ol { padding-left: 24px; margin-bottom: 0; }
-    li + li { margin-top: 10px; }
-    dt { font-weight: 700; margin-top: 18px; }
-    dd { margin: 6px 0 0; color: var(--muted); }
-    footer { color: var(--muted); padding: 40px 0 60px; font-size: 14px; }
-    @media (max-width: 700px) { header { padding-top: 48px; } section { padding: 24px; } }
+    :root {
+      color-scheme: dark;
+      --bg: #101714;
+      --panel: #19241e;
+      --text: #f0f5ef;
+      --muted: #afbeb4;
+      --accent: #72f5ae;
+      --border: #35493d;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Noto Sans TC", sans-serif;
+      line-height: 1.8;
+    }
+
+    .wrap {
+      width: min(100% - 40px, 1040px);
+      margin: auto;
+    }
+
+    header {
+      padding: 80px 0 48px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: .16em;
+    }
+
+    h1 {
+      font-size: clamp(40px, 7vw, 72px);
+      line-height: 1.2;
+      margin: 20px 0;
+      letter-spacing: -.035em;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin: 0 0 16px;
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+
+    #tagline {
+      font-size: 22px;
+      color: var(--muted);
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 28px;
+      margin-top: 30px;
+    }
+
+    a {
+      color: var(--accent);
+      text-underline-offset: 5px;
+    }
+
+    a:hover {
+      color: var(--text);
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 6px;
+    }
+
+    main {
+      padding-top: 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    section {
+      padding: 30px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      scroll-margin-top: 24px;
+    }
+
+    ul,
+    ol {
+      padding-left: 24px;
+      margin-bottom: 0;
+    }
+
+    li+li {
+      margin-top: 10px;
+    }
+
+    dt {
+      font-weight: 700;
+      margin-top: 18px;
+    }
+
+    dd {
+      margin: 6px 0 0;
+      color: var(--muted);
+    }
+
+    footer {
+      color: var(--muted);
+      padding: 40px 0 60px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        padding-top: 48px;
+      }
+
+      section {
+        padding: 24px;
+      }
+    }
   </style>
 </head>
+
 <body>
   <header>
     <div class="wrap">
@@ -60,6 +171,8 @@
       <ul>
         <li><a href="#">GitHub 官方文件</a></li>
         <li><a href="https://git-scm.com/book/zh-tw/v2">Pro Git 繁體中文</a></li>
+        <li><a href="https://developer.mozilla.org/zh-TW/docs/Learn_web_development/Core/Structuring_content">MDN HTML
+            入門學習：結構化內容</a></li>
       </ul>
     </section>
 
@@ -84,4 +197,5 @@
   </main>
   <footer class="wrap">共同編寫，持續改進。請只放願意公開的資料。</footer>
 </body>
+
 </html>
